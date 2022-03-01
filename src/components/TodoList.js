@@ -1,15 +1,11 @@
 import React, { usestate } from "react"
 import { myTodos, getNextId } from './todos'
 
-/*
-Rules of state: never mutate state directly!
-
-Todo Deliverables:
-- Add element to array: use spread operator!
-- Remove element to array: use filter!
-- Update element in array: use map!
-*/
-
+// Todo Deliverables:
+// - Add element to array: use spread operator!
+// - Remove element to array: use filter!
+// - Update element in array: use map!
+// */
 
 function ToDoList() {
     const [toDos, setToDos] = useState();
