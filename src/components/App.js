@@ -1,9 +1,9 @@
 import React from 'react';
-import "bootstrap"
+// import "bootstrap"
 import Header from './Header'
 import NavBar from './NavBar';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-
+// import ToDoList from './ToDoList';
 
 function App() {
     return (
@@ -11,7 +11,8 @@ function App() {
         <header>
           <Header />
         </header>
-        <nav><NavBar/></nav>
+        <nav><NavBar /></nav>
+        {/* <ToDoList /> */}
       </div>
     );
 }

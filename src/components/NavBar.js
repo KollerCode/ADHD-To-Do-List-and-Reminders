@@ -1,14 +1,11 @@
-import React, { Component } from "react";
-import NavbarOffcanvas, { Navbar} from "react-bootstrap/NavbarOffcanvas";
+import React from "react";
 
+function NavBar () {
 
-class NavBar extends Component {
-  render() {
     return (
-      <NavbarOffcanvas>
-      </NavbarOffcanvas>
+      <p className="nav-bar">MMDDYYYY</p>
     );
-  }
 }
+
 
 export default NavBar

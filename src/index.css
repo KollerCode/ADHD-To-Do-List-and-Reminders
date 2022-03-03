@@ -11,10 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* Header */
 img.header-image{
   width: 100%;
-  height: 50%;
+  height: 800px;
   object-fit: cover;
+  object-position: -20% 0;
 }
 
 h1.header-title {
@@ -23,3 +25,10 @@ h1.header-title {
   margin-left: 144px;
   font-size: 100px;
 }
+
+/* Nav Bar 1 */
+
+nav.bar{
+  background-color: beige;
+}
+/* Nav bar 2 with Api and Fidget Clicker */
