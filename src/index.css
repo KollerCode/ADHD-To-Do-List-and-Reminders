@@ -16,7 +16,7 @@ code {
 }
 img.header-image{
   width: 100%;
-  height: auto;
+  height: 450px;
   object-fit: cover; 
   object-position: -20% 0;
   /* position: relative; */
@@ -28,14 +28,14 @@ h1.header-title {
   margin-top: -271px;
   margin-left: 144px;
   font-size: 100px;
-  position: relative;
+  /* position: relative; */
 }
 
 /* Nav Bar 1 */
 .nav-bar {
   font-size: 25px;
   background: linear-gradient(166deg, #FFD6A5, #CAFFBF);
-  padding: 100px;
+  padding: 80px;
 }
 
 #brain {

@@ -15,9 +15,9 @@ function NavBar() {
           style={{ marginLeft: "auto", paddingRight: 40 }}
         >
           <Nav.Link href="/">Home</Nav.Link>
-          <Nav.Link href="about">About</Nav.Link>
-          <Nav.Link href="mental-health">Mental Health</Nav.Link>
-          <Nav.Link href="legal">Legal Services</Nav.Link>
+          <Nav.Link href="about">About ADHD</Nav.Link>
+          <Nav.Link href="mental-health">Brain Dump</Nav.Link>
+          <Nav.Link href="legal">Future Tasks</Nav.Link>
         </Nav>
       </Navbar>
     </div>
