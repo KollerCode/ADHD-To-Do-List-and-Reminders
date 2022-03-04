@@ -14,21 +14,27 @@ code {
 /* Header */
 img.header-image{
   width: 100%;
-  height: 800px;
+  height: 450px;
   object-fit: cover;
   object-position: -20% 0;
 }
 
 h1.header-title {
   color: white;
-  margin-top: -471px;
+  margin-top: -340px;
   margin-left: 144px;
   font-size: 100px;
 }
 
 /* Nav Bar 1 */
 
-nav.bar{
-  background-color: beige;
+a.nav-link{
+  color: white;
+}
+a.brand.navbar-brand{
+  color: white
+}
+.nav-bar {
+  background-color: black;
 }
 /* Nav bar 2 with Api and Fidget Clicker */

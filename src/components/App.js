@@ -7,13 +7,28 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function App() {
     return (
-      <div>
-        <header>
-          <Header />
-        </header>
-        <nav><NavBar /></nav>
-        {/* <ToDoList /> */}
-      </div>
+      // <Router>
+        <div className="App">
+        <header className="App-header">
+          {/* <Header/> */}
+          <NavBar />
+          </header>
+          {/* <Routes>
+            <Route path="/" element={<Home />} />
+
+            <Route path="/about" element={<About />} />
+            <Route path="/mental-health" element={<MentalHealth />} />
+            <Route path="legal" element={<Legal />} />
+            <Route path="/signUp" element={<Signup />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/logout" element={<Home />} />
+            <Route path="/community" element={<Culture />} />
+          </Routes> */}
+        </div>
+        /* <footer className="App-footer">
+          <Footer />
+        </footer>
+        </Router> */
     );
 }
 
