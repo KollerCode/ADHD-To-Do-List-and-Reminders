@@ -1,12 +1,14 @@
 import { Component } from "react";
 import { Navbar, Nav } from "react-bootstrap";
+import happybrain from "../images/happybrain.png"
 
 function NavBar() {
   return (
     <div className="App">
       <Navbar className="nav-bar" style={{ minWidth: 700 }}>
+        <img id="brain" src={happybrain}></img>
         <Navbar.Brand className="brand" href="/">
-          Cortadito
+          ICanADHD
         </Navbar.Brand>
         <Nav
           className="mr-auto"
@@ -18,7 +20,7 @@ function NavBar() {
           <Nav.Link href="legal">Legal Services</Nav.Link>
         </Nav>
       </Navbar>
-      </div>
+    </div>
   );
 }
 

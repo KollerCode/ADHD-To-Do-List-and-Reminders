@@ -8,12 +8,17 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 function App() {
     return (
       // <Router>
-        <div className="App">
-        <header className="App-header">
-          {/* <Header/> */}
-          <NavBar />
+      <div className="App">
+        <section>
+          <header className="App-header">
+            <Header />
           </header>
-          {/* <Routes>
+        </section>
+        <section>
+          <NavBar />
+        </section>
+
+        {/* <Routes>
             <Route path="/" element={<Home />} />
 
             <Route path="/about" element={<About />} />
@@ -24,8 +29,8 @@ function App() {
             <Route path="/logout" element={<Home />} />
             <Route path="/community" element={<Culture />} />
           </Routes> */}
-        </div>
-        /* <footer className="App-footer">
+      </div>
+      /* <footer className="App-footer">
           <Footer />
         </footer>
         </Router> */
