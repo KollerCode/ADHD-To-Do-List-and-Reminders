@@ -12,11 +12,10 @@ function App() {
         <section>
           <header className="App-header">
             <Header />
+            <NavBar />
           </header>
         </section>
-        <section>
-          <NavBar />
-        </section>
+        <section></section>
 
         {/* <Routes>
             <Route path="/" element={<Home />} />

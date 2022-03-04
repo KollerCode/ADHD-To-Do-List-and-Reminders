@@ -4,8 +4,8 @@ import happybrain from "../images/happybrain.png"
 
 function NavBar() {
   return (
-    <div className="App">
-      <Navbar className="nav-bar" style={{ minWidth: 700 }}>
+    <div className="nav-bar-div">
+      <Navbar className="nav-bar">
         <img id="brain" src={happybrain}></img>
         <Navbar.Brand className="brand" href="/">
           ICanADHD

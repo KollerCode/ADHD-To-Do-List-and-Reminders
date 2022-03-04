@@ -12,26 +12,32 @@ code {
     monospace;
 }
 /* Header */
+.header{
+}
 img.header-image{
   width: 100%;
-  height: 450px;
-  object-fit: cover;
+  height: auto;
+  object-fit: cover; 
   object-position: -20% 0;
+  /* position: relative; */
 }
 
 h1.header-title {
-  color: white;
-  margin-top: -340px;
+  color: #fff493;
+  text-shadow: 5px 4px #f56917;
+  margin-top: -271px;
   margin-left: 144px;
   font-size: 100px;
+  position: relative;
 }
 
 /* Nav Bar 1 */
 .nav-bar {
   font-size: 25px;
   background: linear-gradient(166deg, #FFD6A5, #CAFFBF);
-  padding: 40px;
+  padding: 100px;
 }
+
 #brain {
   width: 100px;
 }
@@ -43,7 +49,7 @@ a.nav-link{
 }
 a.brand.navbar-brand{
   color: white;
-  float: left;
+  /* float: left; */
 }
 .navbar-light .navbar-brand:hover {
   color: blue;
