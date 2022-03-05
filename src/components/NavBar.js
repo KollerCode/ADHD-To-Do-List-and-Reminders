@@ -6,7 +6,7 @@ function NavBar() {
   return (
     <Navbar className="nav-bar">
       <NavbarBrand className="brand" href="/">
-        <img id="brain" src={happybrain}width="40" height="40" class="d-inline-block align-top" alt=""/>
+        <img id="brain" src={happybrain}width="100" height="100" class="d-inline-block align-top" alt=""/>
     I Can ADHD 
       </NavbarBrand>
       <Nav className="mr-auto" style={{ marginLeft: "auto", paddingRight: 40 }}>

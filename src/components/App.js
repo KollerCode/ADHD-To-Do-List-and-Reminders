@@ -9,14 +9,13 @@ function App() {
     return (
       // <Router>
       <div>
-          {/* <header className="App-header"> */}
-            <Header />
-            <NavBar />
-        {/* </header> */}
+        <NavBar />
+          <Header />
         <div>
-          <ToDoList />
+          <body>
+            <ToDoList />
+          </body>
         </div>
-      
 
         {/* <Routes>
             <Route path="/" element={<Home />} />

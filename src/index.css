@@ -16,10 +16,10 @@ code {
 }
 img.header-image{
   width: 100%;
-  height: 450px;
+  height: 450px; 
   object-fit: cover; 
-  object-position: -20% 0;
-  /* position: relative; */
+  object-position: -20% 0; 
+  /* position: relative;  */
 }
 
 h1.header-title {
@@ -27,15 +27,16 @@ h1.header-title {
   text-shadow: 5px 4px #f56917;
   margin-top: -271px;
   margin-left: 144px;
-  font-size: 100px;
-  /* position: relative; */
+  position: relative;
+  font-size: larger;
 }
 
 /* Nav Bar 1 */
 .nav-bar {
   font-size: 25px;
   background: linear-gradient(166deg, #FFD6A5, #CAFFBF);
-   padding: 100px; 
+    padding-top: 15px;
+    padding-bottom: 122px;
 }
 
 #brain {
@@ -46,10 +47,12 @@ a.nav-link{
   color: white;
   padding: inherit;
   float: right; 
+  padding-top: 76px;
 }
 a.brand.navbar-brand{
   color: white;
    float: left; 
+   font-size: 75px;
 }
 .navbar-light .navbar-brand:hover {
   color: blue;
