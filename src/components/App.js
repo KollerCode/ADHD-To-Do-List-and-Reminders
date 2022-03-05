@@ -8,11 +8,11 @@ import ToDoList from './ToDoList';
 function App() {
     return (
       // <Router>
-      <div className="App">
-          <header className="App-header">
+      <div>
+          {/* <header className="App-header"> */}
             <Header />
             <NavBar />
-        </header>
+        {/* </header> */}
         <div>
           <ToDoList />
         </div>

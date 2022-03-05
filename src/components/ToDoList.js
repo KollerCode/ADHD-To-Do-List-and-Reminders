@@ -67,11 +67,11 @@ function ToDoList() {
                 for="colFormLabelLg"
                 class="col-sm-2 col-form-label col-form-label-lg"
               >
-                Email
+                Tasks
               </label>
               <div class="col-sm-10">
                 <input
-                  type="email"
+                  type="Tasks"
                   class="form-control form-control-lg"
                   id="colFormLabelLg"
                   placeholder="What do you have to do today?"
