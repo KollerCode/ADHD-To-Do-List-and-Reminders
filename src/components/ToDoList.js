@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import NewToDO from "./NewToDo"
 import ToDO from "./ToDo";
+import { form } from "react-bootstrap"
 
 // Todo Deliverables:
 // - Add element to array: use spread operator!
@@ -9,16 +10,16 @@ import ToDO from "./ToDo";
 // */
 
 function ToDoList() {
-    const [toDos, setToDos] = useState();
-    const [newToDoDescription, setNewToDoDescription] = useState("");
+    // const [toDos, setToDos] = useState("");
+    // const [newToDoDescription, setNewToDoDescription] = useState("");
 
-    //   function addTodo(e) {
-    //     e.preventDefault();
+      function addTodo(e) {
+        e.preventDefault();
     //     const newTodo = {
     //       id: getNextId(),
     //       description: newToDoDescription,
     //       completed: false,
-    //     };
+        };
     //       const updatedTodos = [...toDos, newTodo]
     //       setToDos(updatedTodos)
     
@@ -44,39 +45,62 @@ function ToDoList() {
     //         setToDos(updateToDos)
     //     }
     
-    //   return (
-    //     <div className="App">
-    //       <h2>Add Todos</h2>
-    //       <form onSubmit={addToDo}>
-    //         <label>
-    //           Description:
-    //           <input
-    //             type="text"
-    //             value={newTodoDescription}
-    //             onChange={(e) => setNewToDoDescription(e.target.value)}
-    //           />
-    //         </label>
-    //         <input type="submit" value="Add todo" />
-    //       </form>
-    //       <h2>My Todos</h2>
-    //       <ul>
-    //         {toDos.map((todo) => (
-    //           <li key={todo.id}>
+      return (
+        <div className="App">
+          <h2>Add Todos</h2>
+          <form>
+            <label>
+              What do you have to do today?
+              <input
+              //             type="text"
+              //             value={newTodoDescription}
+              //             onChange={(e) => setNewToDoDescription(e.target.value)}
+              />
+            </label>
+            <input type="submit" />
+            {/* <input class="form-control" type="text" placeholder="Default input">
+                  </input> */}
+          </form>
+          <form>
+            <div class="form-group row">
+              <label
+                for="colFormLabelLg"
+                class="col-sm-2 col-form-label col-form-label-lg"
+              >
+                Email
+              </label>
+              <div class="col-sm-10">
+                <input
+                  type="email"
+                  class="form-control form-control-lg"
+                  id="colFormLabelLg"
+                  placeholder="What do you have to do today?"
+                />
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Submit
+              </button>
+            </div>
+          </form>
+          <h2>My Todos</h2>
+          <ul>
+            {/* //         {toDos.map((todo) => ( */}
+            {/* //           <li key={todo.id}>
     //             <strong>{todo.description}</strong>
     //             <label>
     //               Completed?
-    //               <input
-    //                 type="checkbox"
+    //               <input */}
+            {/* //                 type="checkbox"
     //                 onChange={(e) => updateToDo(todo.id, e.target.checked)}
     //                 checked={todo.completed}
     //               />
     //             </label>
     //             <button onClick={() => deleteToDo(todo.id)}>Delete</button>
-    //           </li>
-    //         ))}
-    //       </ul>
-    //     </div>
-    //   );
+    //           </li> */}
+            {/* //         ))} */}
+          </ul>
+        </div>
+      );
 }
 
 export default ToDoList;

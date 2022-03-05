@@ -3,19 +3,20 @@ import React from 'react';
 import Header from './Header'
 import NavBar from './NavBar';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-// import ToDoList from './ToDoList';
+import ToDoList from './ToDoList';
 
 function App() {
     return (
       // <Router>
       <div className="App">
-        <section>
           <header className="App-header">
             <Header />
             <NavBar />
-          </header>
-        </section>
-        <section></section>
+        </header>
+        <div>
+          <ToDoList />
+        </div>
+      
 
         {/* <Routes>
             <Route path="/" element={<Home />} />
