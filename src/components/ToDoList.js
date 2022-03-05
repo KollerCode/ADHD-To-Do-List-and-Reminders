@@ -5,16 +5,17 @@ import { form } from "react-bootstrap"
 
 // Todo Deliverables:
 // - Add element to array: use spread operator!
-// - Remove element to array: use filter!
+//  - Remove element to array: use filter!
 // - Update element in array: use map!
-// */
 
 function ToDoList() {
-    // const [toDos, setToDos] = useState("");
+    const [toDos, setToDos] = useState([]);
     // const [newToDoDescription, setNewToDoDescription] = useState("");
 
-      function addTodo(e) {
-        e.preventDefault();
+      function addTodo() {
+        // // e.preventDefault();
+        // const updatedTodos = [...toDos, newTodo];
+        // setTodos(updatedTodos);
     //     const newTodo = {
     //       id: getNextId(),
     //       description: newToDoDescription,
@@ -47,34 +48,28 @@ function ToDoList() {
     
       return (
         <div className="App">
-          <h2>Add Todos</h2>
-          <form>
-            <label>
-              What do you have to do today?
-              <input
-              //             type="text"
-              //             value={newTodoDescription}
-              //             onChange={(e) => setNewToDoDescription(e.target.value)}
-              />
-            </label>
-            <input type="submit" />
-            {/* <input class="form-control" type="text" placeholder="Default input">
-                  </input> */}
-          </form>
+          <h2>Tasks</h2>
+          {/* <NewTodo onAddTodo={addTodo} /> */}
+          <ToDO />
+          {/* <TodoList
+            todos={todos}
+            onDeleteTodo={deleteTodo}
+            onUpdateTodo={updateTodo}
+          /> */}
           <form>
             <div class="form-group row">
               <label
                 for="colFormLabelLg"
                 class="col-sm-2 col-form-label col-form-label-lg"
               >
-                Tasks
+                Let's get our tasks for the day!
               </label>
               <div class="col-sm-10">
                 <input
                   type="Tasks"
                   class="form-control form-control-lg"
                   id="colFormLabelLg"
-                  placeholder="What do you have to do today?"
+                  placeholder="Write away!"
                 />
               </div>
               <button type="submit" class="btn btn-primary">
@@ -82,7 +77,6 @@ function ToDoList() {
               </button>
             </div>
           </form>
-          <h2>My Todos</h2>
           <ul>
             {/* //         {toDos.map((todo) => ( */}
             {/* //           <li key={todo.id}>
