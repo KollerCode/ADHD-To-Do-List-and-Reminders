@@ -1,30 +1,17 @@
 import React from "react";
 
-function ToDO() {
-//  const { description, id, completed } = todo
+function ToDO({ toDo}) {
+ 
     
-    // function handleCompleted(completed) {
-    //     // persist changes on server
-    //     fetch(`/todos/${id}`, {
-    //         method: "PATCH",
-    //         headers: {
-    //             "Content-Type": "application/json"
-    //         },
-    //         body: JSON.stringify({ todo: { completed: completed } })
-    //     })
-    //         .then(r => r.json())
-    //         .then(data => onUpdateTodo(data.todo.id, data.todo.completed))
-    //     // then use onUpdateTodo to update todo in state
-    // }
+    function handleCompleted(completed) {
+
+    }
     
-    // function handleDelete() {
-    //     // persist changes on server
-    //     fetch(`/todos/${id}`, {
-    //         method: "DELETE"
-    //     })
-        // then use onDeleteTodo to remove todo from state
-        // onDeleteTodo(id)
-    // }
+    function handleDelete() {
+        fetch(`/todos/${}`, {
+            method: "DELETE"
+        })
+    }
     
     return (
         <li>

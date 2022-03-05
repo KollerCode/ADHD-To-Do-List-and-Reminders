@@ -1,0 +1,40 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "description": "JSON SERVER",
+      "completed": false,
+      "urgent": "foo",
+      "wait": "foo"
+      
+    },
+    {
+      "id": 2,
+      "description": "REACT",
+      "completed": false,
+      "urgent": "facebook",
+      "wait": "foo"
+    },
+    {
+      "id": 3,
+      "description": "BOOTSTRAP",
+      "completed": false,
+      "urgent": "css master",
+      "wait": "foo"
+    },
+    {
+      "id": 4,
+      "description": "MEDIUM",
+      "completed": false,
+      "urgent": "medium",
+      "wait": "foo"
+    }
+  ],
+  "dumps": [
+    {
+      "id": 3,
+      "content": "BOOTSTRAP"
+    }
+  ]
+
+}

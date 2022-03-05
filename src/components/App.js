@@ -3,7 +3,7 @@ import React from 'react';
 import Header from './Header'
 import NavBar from './NavBar';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import ToDoList from './ToDoList';
+import ToDoListForm from './ToDoListForm';
 
 function App() {
     return (
@@ -13,7 +13,7 @@ function App() {
           <Header />
         <div>
           <body>
-            <ToDoList />
+            <ToDoListForm />
           </body>
         </div>
 
