@@ -7,11 +7,11 @@ function NewToDO({ onAddToDo }) {
         function handleSubmit(e) {
           e.preventDefault();
           const apiDataForTodo = {
-            todo: {
+              todo: {
               description: description,
               completed: false,
-              urgent: "foo",
-              wait: "foo",
+              urgent: false,
+              wait: false,
             },
           };
           // persist todo on server
@@ -27,7 +27,7 @@ function NewToDO({ onAddToDo }) {
           // then use onAddTodo to add todo to state
         }
     return (
-      <div className="App">
+      <div className="form">
         <h2>Tasks</h2>
         {/* <NewTodo onAddTodo={addTodo} /> */}
         {/* <TodoList

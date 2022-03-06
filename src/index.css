@@ -59,3 +59,20 @@ a.brand.navbar-brand{
 } 
 
 /* Nav bar 2 with Api and Fidget Clicker */
+
+/* main tasklister */
+div.main-form {
+  display: grid;
+  justify-content: space-around;
+  text-align: center;
+  background-color: #AEF8FF;
+  
+}
+
+div.task-lister{
+background-color: #CAFFBF;
+border-radius: 11%;
+border-color: black;
+font-size: 20px;
+padding: 40px;
+}

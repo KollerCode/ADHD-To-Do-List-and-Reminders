@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import NewToDO from "./NewToDo"
+import NewToDo from "./NewToDo"
 import ToDoList from "./ToDoList";
 
 
@@ -9,7 +9,7 @@ import ToDoList from "./ToDoList";
 // - Update element in array: use map!
 
 function ToDoListForm() {
-  const [toDos, setToDos] = useState([]);
+  const [todos, setToDos] = useState([]);
 
   useEffect(() => {
     fetch("/todos")
@@ -17,15 +17,15 @@ function ToDoListForm() {
       .then((data) => setToDos(data.todos));
   }, []);
   
-  function addTodo(newTodo) {
-    const updatedTodos = [...toDos, newTodo];
-    setToDos(updatedTodos);
+  function addToDo(newToDo) {
+    const updatedToDos = [...todos, newToDo];
+    setToDos(updatedToDos);
   };
 
   return (
-    <div className="App">
-      {/* <NewTodo onAddTodo={addTodo} /> */}
-      {/* <TodoList todos={todos} onDeleteTodo={""} /> */}
+    <div className="task-lister">
+      <NewToDo onAddTodo={addToDo} />
+      <ToDoList todos={todos} />
     </div>
   )
 }

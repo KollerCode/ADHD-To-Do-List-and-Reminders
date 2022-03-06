@@ -1,23 +1,24 @@
 import React from 'react';
 // import "bootstrap"
-import Header from './Header'
-import NavBar from './NavBar';
+import Header from './components/Header'
+import NavBar from './components/NavBar';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import ToDoListForm from './ToDoListForm';
+import ToDoListForm from './components/ToDoListForm';
 
 function App() {
     return (
       // <Router>
       <div>
-        <NavBar />
+        <header>
+          <NavBar />
           <Header />
-        <div>
-          <body>
-            <ToDoListForm />
-          </body>
+        </header>
+        <div className="main-form">
+          <ToDoListForm />
         </div>
+      </div>
 
-        {/* <Routes>
+      /* <Routes>
             <Route path="/" element={<Home />} />
 
             <Route path="/about" element={<About />} />
@@ -27,8 +28,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/logout" element={<Home />} />
             <Route path="/community" element={<Culture />} />
-          </Routes> */}
-      </div>
+          </Routes> */
       /* <footer className="App-footer">
           <Footer />
         </footer>

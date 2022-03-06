@@ -1,21 +1,17 @@
 import React from "react";
 
-function ToDO({ toDo}) {
+function ToDO({ toDo }) {
  
     
     function handleCompleted(completed) {
 
     }
     
-    function handleDelete() {
-        fetch(`/todos/${}`, {
-            method: "DELETE"
-        })
-    }
+    
     
     return (
         <li>
-            <strong>{"description"}</strong>
+            <strong>"description"</strong>
             <label>
                 Completed?
                 <input

@@ -4,30 +4,30 @@
       "id": 1,
       "description": "JSON SERVER",
       "completed": false,
-      "urgent": "foo",
-      "wait": "foo"
+      "urgent": false,
+      "wait": false
       
     },
     {
       "id": 2,
       "description": "REACT",
       "completed": false,
-      "urgent": "facebook",
-      "wait": "foo"
+      "urgent": false,
+      "wait": false
     },
     {
       "id": 3,
       "description": "BOOTSTRAP",
       "completed": false,
-      "urgent": "css master",
-      "wait": "foo"
+      "urgent": false,
+      "wait": false
     },
     {
       "id": 4,
       "description": "MEDIUM",
       "completed": false,
-      "urgent": "medium",
-      "wait": "foo"
+      "urgent": false,
+      "wait": false
     }
   ],
   "dumps": [
