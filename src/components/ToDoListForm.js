@@ -11,11 +11,11 @@ import ToDoList from "./ToDoList";
 function ToDoListForm() {
   const [todos, setToDos] = useState([]);
 
-  useEffect(() => {
-    fetch("/todos")
-      .then((response) => response.json())
-      .then((data) => setToDos(data.todos));
-  }, []);
+ useEffect(() => {
+   fetch("http://localhost:4000/todos")
+     .then((r) => r.json())
+     .then((data) => setToDos(data.todos));
+ }, []);
   
   function addToDo(newToDo) {
     const updatedToDos = [...todos, newToDo];
@@ -24,7 +24,7 @@ function ToDoListForm() {
 
   return (
     <div className="task-lister">
-      <NewToDo onAddTodo={addToDo} />
+      <NewToDo onAddToDo={addToDo} />
       <ToDoList todos={todos} />
     </div>
   )
