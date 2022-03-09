@@ -14,18 +14,33 @@ function ToDoListForm() {
  useEffect(() => {
    fetch("http://localhost:4000/todos")
      .then((r) => r.json())
-     .then((data) => setToDos(data.todos));
+     .then((data) => setToDos(data));
  }, []);
   
   function addToDo(newToDo) {
     const updatedToDos = [...todos, newToDo];
     setToDos(updatedToDos);
   };
+   function deleteToDo(id) {
+     const updatedTodos = todos.filter((todo) => todo.id !== id);
+     setToDos(updatedTodos);
+   }
+
+   function updateToDo(id, completed) {
+     const updatedToDos = todos.map((todo) => {
+       if (todo.id === id) {
+         return { ...todo, completed };
+       } else {
+         return todo;
+       }
+     });
+     setToDos(updatedToDos);
+   }
 
   return (
     <div className="task-lister">
       <NewToDo onAddToDo={addToDo} />
-      <ToDoList todos={todos} />
+      <ToDoList todos={todos} onDeleteToDo={deleteToDo} onUpdateToDo={updateToDo}/>
     </div>
   )
 }

@@ -1,7 +1,9 @@
 import React from "react";
 
-function ToDo({ toDo, onUpdateTodo }) {
-  const { id, description, urgent, wait, completed } = toDo;
+function ToDo({ todo, onUpdateToDo, onDeleteToDo }) {
+  const { id, description, completed } = todo;
+
+  console.log(onUpdateToDo)
     
     function handleCompleted(completed) {
         // persist changes on server
@@ -11,23 +13,30 @@ function ToDo({ toDo, onUpdateTodo }) {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            toDo: {
-              completed: completed,
-              urgent: urgent,
-              wait: wait,
-            },
+                  completed: completed,
+                //   urgent: false,
+                //   wait: false,
           }),
         })
           .then((r) => r.json())
-          .then((data) =>
-            onUpdateTodo(
-              data.todo.id,
-              data.todo.completed,
-              data.todo.urgent,
-              data.todo.wait
-            )
+            .then((data) =>  onUpdateToDo(data.todo.id, data.todo.completed)
+            //   console.log(
+            // onUpdateToDo(
+            // data.todo.id,
+            // data.todo.completed,
+            // data.todo.urgent,
+            // data.todo.wait
+            // ))
           );
-        }
+    }
+    function handleDelete() {
+      // persist changes on server
+      fetch(`http://localhost:4000/todos/${id}`, {
+        method: "DELETE",
+      });
+    //   then use onDeleteTodo to remove todo from state
+      onDeleteToDo(id);
+    }
     
     return (
       <li>
@@ -37,7 +46,7 @@ function ToDo({ toDo, onUpdateTodo }) {
           <input
             type="checkbox"
             onChange={(e) => handleCompleted(e.target.checked)}
-            checked={completed}
+            // checked={completed}
           />
             </label>
         <label>
@@ -45,7 +54,7 @@ function ToDo({ toDo, onUpdateTodo }) {
           <input
             type="checkbox"
             onChange={(e) => handleCompleted(e.target.urgent)}
-            checked={completed}
+            // checked={completed}
           />
         </label>
         <label>
@@ -53,10 +62,9 @@ function ToDo({ toDo, onUpdateTodo }) {
           <input
             type="checkbox"
             onChange={(e) => handleCompleted(e.target.wait)}
-            checked={completed}
+            // checked={completed}
           />
-            </label>
-      
+            </label> 
         {/* <button onClick={"click"}>Delete</button> */}
       </li>
     );

@@ -7,12 +7,10 @@ function NewToDO({ onAddToDo }) {
         function handleSubmit(e) {
           e.preventDefault();
           const apiDataForTodo = {
-              todo: {
               description: description,
               completed: false,
               urgent: false,
               wait: false,
-            },
           };
           // persist todo on server
            fetch("http://localhost:4000/todos", {
@@ -23,7 +21,7 @@ function NewToDO({ onAddToDo }) {
              body: JSON.stringify(apiDataForTodo),
            })
              .then((r) => r.json())
-             .then((data) => onAddToDo(data.todo));
+             .then((data) => onAddToDo(data));
           // then use onAddTodo to add todo to state
         }
     return (
@@ -35,7 +33,7 @@ function NewToDO({ onAddToDo }) {
             onDeleteTodo={deleteTodo}
             onUpdateTodo={updateTodo}
           /> */}
-        <form>
+        <form onSubmit={handleSubmit}>
           <div class="form-group row">
             <label
               for="colFormLabelLg"
