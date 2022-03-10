@@ -2,59 +2,31 @@
   "todos": [
     {
       "id": 1,
-      "description": "JSON SERVER",
+      "description": "Finish homework",
       "completed": false,
       "urgent": false,
       "wait": false
     },
     {
       "id": 2,
-      "description": "REACT",
+      "description": "Give Johann a haircut",
       "completed": false,
       "urgent": false,
       "wait": false
     },
     {
       "id": 3,
-      "description": "BOOTSTRAP",
+      "description": "pay the electric bill",
       "completed": false,
       "urgent": false,
       "wait": false
     },
     {
       "id": 4,
-      "description": "MEDIUM",
+      "description": "find a daycare",
       "completed": false,
       "urgent": false,
       "wait": false
-    },
-    {
-      "description": "jjhghj",
-      "completed": true,
-      "urgent": false,
-      "wait": false,
-      "id": 5
-    },
-    {
-      "description": "jjhghj",
-      "completed": false,
-      "urgent": false,
-      "wait": false,
-      "id": 6
-    },
-    {
-      "description": "hjgjhg",
-      "completed": false,
-      "urgent": false,
-      "wait": false,
-      "id": 7
-    },
-    {
-      "description": "hjgjhg",
-      "completed": false,
-      "urgent": false,
-      "wait": false,
-      "id": 8
     }
   ],
   "dumps": [

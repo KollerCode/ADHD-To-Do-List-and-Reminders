@@ -21,21 +21,22 @@ function ToDoListForm() {
     const updatedToDos = [...todos, newToDo];
     setToDos(updatedToDos);
   };
-   function deleteToDo(id) {
+
+  function deleteToDo(id) {
      const updatedTodos = todos.filter((todo) => todo.id !== id);
      setToDos(updatedTodos);
    }
 
-   function updateToDo(id, completed) {
+  function updateToDo(id, completed) {
      const updatedToDos = todos.map((todo) => {
        if (todo.id === id) {
          return { ...todo, completed };
        } else {
          return todo;
        }
-     });
+    });
      setToDos(updatedToDos);
-   }
+  }
 
   return (
     <div className="task-lister">
