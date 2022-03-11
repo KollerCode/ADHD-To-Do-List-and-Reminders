@@ -10,9 +10,15 @@ function DailyQuote() {
       })
       .then((quotes) => setQuotes(quotes))
   }, []);
-  console.log(quotes)
+  // console.log(quotes)
+  
+  let randomIndex = Math.floor(Math.random() * (quotes.length - 1));
+  let randomQuote = quotes[randomIndex]
+// more on line 11 and add more state for randomQuote
 
-  return <p></p>;
+  return (
+    <h1>{randomQuote.text}</h1>
+  )
 }
   
 

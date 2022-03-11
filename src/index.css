@@ -11,6 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+body {
+  background-color: #AEF8FF;
+}
 /* Header */
 .header{
 }
@@ -44,7 +48,7 @@ h1.header-title {
 }
 /* Nav links */
 a.nav-link{
-  color: white;
+  color: #41c9ff;
   padding: inherit;
   float: right; 
   padding-top: 76px;
@@ -60,13 +64,39 @@ a.brand.navbar-brand{
 
 /* Nav bar 2 with Api and Fidget Clicker */
 
+h1{
+  text-align: center;
+  background-color: #FFD6A5;
+}
+.spinner-image > img {
+  width: 256px;
+  margin: 16px auto;
+}
+
+.push-button {
+  width: 128px;
+  height: 48px;
+  background: #e33;
+  color: white;
+  border: 0;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.push-button:hover {
+  background: #f55;
+}
+.push-button:focus {
+  outline: none;
+}
+
 /* main tasklister */
 div.main-form {
   display: grid;
   justify-content: space-around;
   text-align: center;
-  background-color: #AEF8FF;
-  
 }
 
 div.task-lister{
