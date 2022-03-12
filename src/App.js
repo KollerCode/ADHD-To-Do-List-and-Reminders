@@ -12,30 +12,26 @@ import {
 import ToDoListForm from './components/ToDoListForm';
 import BrainDump from './components/BrainDump'
 import DailyQuote from './components/DailyQuote';
+import About from './components/About';
+import Home from './components/Home';
 
 function App() {
   return (
     <>
-      {/* <Router> */}
-      <div>
-        <header>
-          <NavBar />
-          <Header />
-          <DailyQuote />
-        </header>
-        {/* <Routes> */}
-        <div className="main-form">
-          <ToDoListForm />
+      <Router>
+        <div>
+          <header>
+            <NavBar />
+            <Header />
+            {/* <DailyQuote /> */}
+          </header>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/braindump" element={<BrainDump />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
         </div>
-        {/* <Route path="/braindump">
-          <BrainDump />
-        </Route> */}
-        {/* <Route path="/about">
-          <About />
-        </Route> */}
-        {/* </Routes> */}
-      </div>
-      {/* </Router> */}
+      </Router>
     </>
   );
 }
