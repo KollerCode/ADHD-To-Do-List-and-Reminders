@@ -1,14 +1,15 @@
 import React from "react";
+import SpinnerIcon from "../images/SpinnerIcon.gif"
 
 function Spinner() {
-    let $spin = document.querySelector("[data-js-spin]");
+var $spin = document.querySelector('[data-js-spin]')
     function handleSpin() {
-         spin($spin, { theta: 0, av: 30 });
+         spin({SpinnerIcon}, { theta: 0, av: 30 });
     }
 
     function spin(el, { theta, av }) {
       theta += av;
-      el.style.transform = `rotate(${theta}deg)`;
+      el = `rotate(${theta}deg)`;
       av *= 0.99;
       if (av < 0.001) return;
 
@@ -16,11 +17,12 @@ function Spinner() {
         spin(el, { theta, av });
       });
     }
-    return (
-  <div class='spinner-image'>
-    <img src='https://cdn.shopify.com/s/files/1/1735/5803/products/fidget-spinner-red-min_800x.jpg?v=1501497752' alt=''/>
-            <button class='push-button' onClick={} data-js-spin>Spin me!</button>
-</div>
+  
+  return (
+    <div class='spinner-image'>
+    <img src={SpinnerIcon} alt=''/>
+      <button className='push-button' onClick={handleSpin}>Spin me!</button>
+    </div>
     )
 }
 

@@ -23,7 +23,7 @@ function App() {
           <header>
             <NavBar />
             <Header />
-            {/* <DailyQuote /> */}
+            <DailyQuote />
           </header>
           <Routes>
             <Route path="/" element={<Home />} />

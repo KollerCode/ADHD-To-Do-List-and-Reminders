@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Spinner from "./Spinner";
 
 function DailyQuote() {
   const [quotes, setQuotes] = useState([]);
@@ -17,7 +18,10 @@ function DailyQuote() {
 // more on line 11 and add more state for randomQuote
 
   return (
-    <h1>{randomQuote.text}</h1>
+    <div>
+    {/* <h1>{randomQuote.text}</h1> */}
+    <Spinner />
+    </div>
   )
 }
   

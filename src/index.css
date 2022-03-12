@@ -64,19 +64,19 @@ a.brand.navbar-brand{
 
 /* Nav bar 2 with Api and Fidget Clicker */
 
-h1{
+/* h1{
   text-align: center;
   background-color: #FFD6A5;
-}
+} */
 .spinner-image > img {
-  width: 256px;
+  width: 153px;
   margin: 16px auto;
 }
 
 .push-button {
   width: 128px;
   height: 48px;
-  background: #e33;
+  background: rgba(240, 131, 131, 0.671);
   color: white;
   border: 0;
   font-size: 16px;
@@ -86,11 +86,11 @@ h1{
 }
 
 .push-button:hover {
-  background: #f55;
+  background: rgb(231, 121, 121);
 }
 .push-button:focus {
   outline: none;
-}
+} 
 
 /* main tasklister */
 div.main-form {
@@ -105,4 +105,9 @@ border-radius: 11%;
 border-color: black;
 font-size: 20px;
 padding: 40px;
+}
+
+/* About section */
+div.about{
+  text-align: center;
 }
