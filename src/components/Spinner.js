@@ -1,27 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import SpinnerIcon from "../images/SpinnerIcon.gif"
 
 function Spinner() {
-var $spin = document.querySelector('[data-js-spin]')
-    function handleSpin() {
-         spin({SpinnerIcon}, { theta: 0, av: 30 });
-    }
-
-    function spin(el, { theta, av }) {
-      theta += av;
-      el = `rotate(${theta}deg)`;
-      av *= 0.99;
-      if (av < 0.001) return;
-
-      requestAnimationFrame(() => {
-        spin(el, { theta, av });
-      });
-    }
-  
+  const [spin,setSpin] = useState(0)
+ 
   return (
-    <div class='spinner-image'>
-    <img src={SpinnerIcon} alt=''/>
-      <button className='push-button' onClick={handleSpin}>Spin me!</button>
+    <div>
+      <img
+        className="spinner-image"
+        src={SpinnerIcon}
+        alt=''
+        onClick={() => setSpin(1)}
+        onAnimationEnd={() => setSpin(0)}
+        spin={spin}
+      />
     </div>
     )
 }

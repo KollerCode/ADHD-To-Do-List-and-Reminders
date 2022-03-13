@@ -1,4 +1,5 @@
 import React from "react";
+import warrior from "../images/warrior.jpg"
 
 function About() {
     return (
@@ -54,28 +55,42 @@ function About() {
             symptoms can change over time, the presentation may change over time
             as well.
           </p>
-        </div>
+            </div>
+        <img src={warrior} className="warrior-img"/>
         <div className="about-app">
-                <h1>What makes this app different</h1>
-                <p>
-                    This app was made by someone, me, who has struggled with ADHD 
-                    and knows what works and what doesn't when it comes to trying to
-                    manage tasks. Everyone is different, which is why other sources and 
-                    persons with ADHD were approached with their thoughts on how they organize
-                    themselves. ADHD brains are tricky and often times we have different needs. 
-                    This app was made with those needs in mind. The fidget spinner in the 2nd nav
-                    bar is for those times when you forgot a thought a need a moment to pause and
-                    reflect. Or, just to have a fidget moment. The brain dump feature is for those
-                    moments when you have a thought throughout the day and you need to jot it down
-                    so you don't forget it. Whether it be an awesome insiration driven idea, or
-                    someone 
-                </p>
+          <h1>What makes this app different</h1>
+          <p>
+            This app was made by someone, me, who has struggled with ADHD and
+            knows what works and what doesn't when it comes to trying to manage
+            tasks. Everyone is different, which is why other sources and persons
+            with ADHD were approached with their thoughts on how they organize
+            themselves. ADHD brains are tricky and often times we have different
+            needs. This app was made with those needs in mind. Even the colors
+            were are meant to stimulate the ADHD brain!
+          </p>
+          <p>
+            <h3>Let's look at some of the unique features!</h3>
+            The fidget spinner in the 2nd nav bar is for those times when you
+            forgot a thought a need a moment to pause and reflect. Or, just to
+            have a fidget moment. The brain dump feature is for those moments
+            when you have a thought throughout the day and you need to jot it
+            down so you don't forget it. Whether it be an awesome insiration
+            driven idea, or just a reminder. Then of course we have our task
+            lister, which has two buttons one is the star which is to remind us
+            which tasks are the ones that MUST be prioritized. Sometimes, by
+            thinking about the consequences of not completeing these tasks we
+            can put more weight on the task which increases the likelyhood of
+            completing it. The other button is the calendar button, which will
+            then route the task to the "future tasks" tab. This is for tasks
+            that are important, but that don't necessarily have to be completed
+            today. They can be left for tomorrow or even next week.
+          </p>
         </div>
         <div className="about-me">
           <h1>About the creator</h1>
         </div>
-        <p>Sources:
-          https://chadd.org/about-adhd/overview/
+        <p>
+          Sources: https://chadd.org/about-adhd/overview/
           https://www.cdc.gov/ncbddd/adhd/facts.html
         </p>
       </div>
