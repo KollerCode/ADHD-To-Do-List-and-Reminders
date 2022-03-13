@@ -1,5 +1,6 @@
 import React from "react";
 import warrior from "../images/warrior.jpg"
+import natasha from "../images/natasha.jpg"
 
 function About() {
     return (
@@ -55,8 +56,8 @@ function About() {
             symptoms can change over time, the presentation may change over time
             as well.
           </p>
-            </div>
-        <img src={warrior} className="warrior-img"/>
+        </div>
+        <img src={warrior} className="warrior-img" />
         <div className="about-app">
           <h1>What makes this app different</h1>
           <p>
@@ -68,8 +69,8 @@ function About() {
             needs. This app was made with those needs in mind. Even the colors
             were are meant to stimulate the ADHD brain!
           </p>
+          <h3>Let's look at some of the unique features!</h3>
           <p>
-            <h3>Let's look at some of the unique features!</h3>
             The fidget spinner in the 2nd nav bar is for those times when you
             forgot a thought a need a moment to pause and reflect. Or, just to
             have a fidget moment. The brain dump feature is for those moments
@@ -88,6 +89,31 @@ function About() {
         </div>
         <div className="about-me">
           <h1>About the creator</h1>
+          <h3>Natasha</h3>
+          <img className="aboutpic" src={natasha} alt="natasha"></img>
+          <p>
+            Natasha is a jack of all trades. Holding a Master's in International
+            Education and an undergraduate degree in Anthropology and music. She
+            is always looking for a challenge and has traveled around the world
+            picking up various languages along the way. Coding is her newest
+            passion and she feels like she is finally where she belongs. She has 
+            is a diversity champion and lovs to meet other latinx in tech as well
+                    as a big supporter of embracing mental health and knowing when to get help. 
+                    
+          </p>
+          <p>
+            <a href="https://github.com/KollerCode" className="aboutlink">
+              https://github.com/KollerCode
+            </a>{" "}
+          </p>
+          <p>
+            <a
+              href="https://www.linkedin.com/in/kollernatasha/"
+              className="aboutlink"
+            >
+              https://www.linkedin.com/in/kollernatasha/
+            </a>{" "}
+          </p>
         </div>
         <p>
           Sources: https://chadd.org/about-adhd/overview/

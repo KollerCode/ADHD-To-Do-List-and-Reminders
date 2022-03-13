@@ -101,6 +101,9 @@ font-size: 20px;
 padding: 40px;
 }
 
+li.list{
+  text-align: left;
+}
 /* About section */
 div.about{
   text-align: center;
@@ -108,5 +111,10 @@ div.about{
 }
 
 img.warrior-img{
+  border-radius: 50%;
+}
+
+img.aboutpic{
+  width: 44%;
   border-radius: 50%;
 }

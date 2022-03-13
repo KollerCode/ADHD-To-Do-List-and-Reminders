@@ -1,13 +1,6 @@
 {
   "todos": [
     {
-      "id": 1,
-      "description": "Finish homework",
-      "completed": false,
-      "urgent": false,
-      "wait": false
-    },
-    {
       "id": 2,
       "description": "Give Johann a haircut",
       "completed": false,
@@ -27,6 +20,13 @@
       "completed": false,
       "urgent": false,
       "wait": false
+    },
+    {
+      "description": "But new shoes",
+      "completed": false,
+      "urgent": false,
+      "wait": false,
+      "id": 5
     }
   ],
   "dumps": [
