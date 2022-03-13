@@ -6,7 +6,7 @@ function ToDoList({ todos, onDeleteToDo, onUpdateToDo }) {
   
   return (
     <div>
-      <h2>My Todos</h2>
+      <h2>My To-Do's</h2>
       <ol>
         {todos && todos.map((todo) => (
             <ToDo key={todo.id}

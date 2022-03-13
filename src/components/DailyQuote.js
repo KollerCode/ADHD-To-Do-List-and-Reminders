@@ -4,6 +4,15 @@ import Spinner from "./Spinner";
 function DailyQuote() {
   const [quotes, setQuotes] = useState([]);
   const [text, setText] = useState("")
+  // const [date, setDate] = useState("")
+
+var d = new Date();
+
+let month = d.getUTCMonth() + 1; // Since getUTCMonth() returns month from 0-11 not 1-12
+let date = d.getUTCDate();
+let year = d.getUTCFullYear();
+
+let dateStr = month + "/" + date + "/" + year;
   
   useEffect(() => {
     fetch("https://type.fit/api/quotes")
@@ -21,10 +30,11 @@ function DailyQuote() {
 
   return (
     <div>
-    {/* <h1 >{randomQuote}</h1> */}
-    <Spinner />
+      {/* <h1 >{randomQuote}</h1> */}
+      <Spinner />
+      <h2>{dateStr}</h2>
     </div>
-  )
+  );
 }
   
 

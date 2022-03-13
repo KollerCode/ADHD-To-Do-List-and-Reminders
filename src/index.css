@@ -59,7 +59,7 @@ a.brand.navbar-brand{
    font-size: 75px;
 }
 .navbar-light .navbar-brand:hover {
-  color: blue;
+  color: #ffa641;
 } 
 
 /* Nav bar 2 with Api and Fidget Clicker */
@@ -72,6 +72,7 @@ img.spinner-image{
   width: 153px;
   margin: 16px auto;
   cursor:pointer;
+  float: right;
 }
 img.spinner-image[spin='1']{
   animation: spin 2s 1;
@@ -91,6 +92,11 @@ div.main-form {
   display: grid;
   justify-content: space-around;
   text-align: center;
+  width: 100%;
+}
+input{
+  padding: 6px 5px;
+  font-size: 15px;
 }
 
 div.task-lister{
@@ -99,10 +105,20 @@ border-radius: 11%;
 border-color: black;
 font-size: 20px;
 padding: 40px;
+width: 100%;
 }
 
 li.list{
   text-align: left;
+  padding: 10px;
+}
+
+label.urgent{
+  padding: 7px;
+}
+label.tomorrow{
+  padding-right: 10px;
+
 }
 /* About section */
 div.about{

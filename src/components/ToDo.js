@@ -57,7 +57,7 @@ function ToDo({ todo, onUpdateToDo, onDeleteToDo }) {
           />
         </label>
         <strong>{description}</strong>
-        <label>
+        <label className="urgent">
           Get done ASAP
           {isUrgent ? (
             <button
@@ -93,7 +93,7 @@ function ToDo({ todo, onUpdateToDo, onDeleteToDo }) {
             </button>
           )}
         </label>
-        <label>
+        <label className="tomorrow">
           Tomorrow-ish
           <button>
             <svg
@@ -109,7 +109,7 @@ function ToDo({ todo, onUpdateToDo, onDeleteToDo }) {
             </svg>
           </button>
         </label>
-        <button onClick={handleDelete}>Task Complete</button>
+        <button classname="delete-task" onClick={handleDelete}>Bye Task!</button>
       </li>
     );
 }

@@ -27,7 +27,7 @@ function NewToDO({ onAddToDo }) {
         }
     return (
       <div className="form">
-        <h2>Tasks</h2>
+        <h1>Task Lister</h1>
         {/* <NewToDo onAddTodo={addToDo} /> */}
         {/* <TodoList
             todos={todos}
@@ -39,7 +39,7 @@ function NewToDO({ onAddToDo }) {
             <label
               for="colFormLabelLg"
               class="col-sm-2 col-form-label col-form-label-lg">
-              Let's get our tasks for the day!
+              What tasks do you have to accomplish?
             </label>
             <div class="col-sm-10">
               <input
@@ -47,12 +47,12 @@ function NewToDO({ onAddToDo }) {
                 class="form-control form-control-lg"
                 id="colFormLabelLg"
                 value={description}
-                placeholder="Write away!"
+                placeholder="Tisk, Task, Type here!"
                 onChange={(e) => setDescription(e.target.value)}
               />
             </div>
             <button type="submit" class="btn btn-primary">
-              Submit
+              Add Task
             </button>
           </div>
         </form>
