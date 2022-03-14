@@ -11,7 +11,8 @@ function Dumps({ dump, onUpdateDump, onDeleteDump }) {
   }
 
   return (
-    <ul>
+    <ul className="list
+    ">
       <strong>{description}</strong>
       <button classname="delete-task" onClick={handleDelete}>
         Delete Me!

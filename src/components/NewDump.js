@@ -20,7 +20,7 @@ function NewDump({ onAddDump }) {
       .then((data) => onAddDump(data));
   }
   return (
-    <div className="form">
+    <div className="braindump-form">
       <h2>Brain Dump</h2>
       <form onSubmit={handleSubmit}>
         <div class="form-group row">

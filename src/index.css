@@ -111,14 +111,20 @@ width: 100%;
 li.list{
   text-align: left;
   padding: 10px;
+  color: #065a5cde;;
 }
 
 label.urgent{
   padding: 7px;
+  color: #c20e0e;
 }
 label.tomorrow{
   padding-right: 10px;
+}
 
+h1{
+  color:#6aeed1;
+  text-shadow: 1.5px 1.5px #194849de;
 }
 /* About section */
 div.about{
@@ -133,4 +139,38 @@ img.warrior-img{
 img.aboutpic{
   width: 44%;
   border-radius: 50%;
+}
+
+/* brain dump */
+div.braindump-form {
+  display: grid;
+  justify-content: space-around;
+  text-align: center;
+  width: 100%;
+   color: #5c4285;
+}
+input{
+  padding: 6px 5px;
+  font-size: 15px;
+}
+
+div.braindump{
+background-color: #FFD1D1;
+border-radius: 11%;
+border-color: black;
+font-size: 20px;
+width: 75%;
+padding: 20px;
+float: right;
+text-align: center;
+}
+
+ul.list{
+  text-align: center;
+  padding: 10px;
+  color: #5c4285;
+}
+h2{
+  color: #CDBCE7;
+text-shadow: 1px 0.5px #380f5ede;
 }

@@ -22,11 +22,18 @@
       "wait": false
     },
     {
-      "description": "But new shoes",
+      "description": "Buy a car",
       "completed": false,
       "urgent": false,
       "wait": false,
       "id": 5
+    },
+    {
+      "description": "Call the doctor",
+      "completed": false,
+      "urgent": false,
+      "wait": false,
+      "id": 6
     }
   ],
   "dumps": [
