@@ -31,8 +31,20 @@
   ],
   "dumps": [
     {
-      "id": 3,
-      "description": "BOOTSTRAP"
+      "description": "That sweater that girl had on at the store today, don't forget to try and find one like it!",
+      "id": 4
+    },
+    {
+      "description": "What is the name of that one lizard that looks like a dinosaur... Try to remember or ask your friend that likes reptiles",
+      "id": 5
+    },
+    {
+      "description": "Don't forget you saw a really cheap car on the side of hwy 19, call the owner! The number is on the fridge!",
+      "id": 6
+    },
+    {
+      "description": "Make a genius documentary about how cats communicate",
+      "id": 7
     }
   ]
 }

@@ -5,7 +5,7 @@ function DumpList({ dumps, onDeleteDump, onUpdateDump }) {
     console.log(dumps)
   return (
     <div>
-      <h2>My To-Do's</h2>
+      <h2>📝My Random Thoughts and Inspirations🤔</h2>
       <ol>
         {dumps &&
           dumps.map((dump) => (
