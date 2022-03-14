@@ -27,7 +27,7 @@ function App() {
           </header>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/braindump" element={<BrainDump />} />
+            <Route path="/braindump" element={<BrainDump/>} />
             <Route path="/about" element={<About />} />
           </Routes>
         </div>

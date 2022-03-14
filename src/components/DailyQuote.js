@@ -23,14 +23,12 @@ let dateStr = month + "/" + date + "/" + year;
   
     let randomIndex = Math.floor(Math.random() * (quotes.length - 1));
     let randomQuote = quotes[randomIndex];
-    
     // setText(randomQuote);
   
 // more on line 11 and add more state for randomQuote
 
   return (
     <div>
-      {/* <h1 >{randomQuote}</h1> */}
       <Spinner />
       <h2>{dateStr}</h2>
     </div>

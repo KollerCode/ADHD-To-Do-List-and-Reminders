@@ -11,9 +11,9 @@ function NavBar() {
       </NavbarBrand>
       <Nav className="mr-auto" style={{ marginLeft: "auto", paddingRight: 40 }}>
         <NavLink href="/">Home</NavLink>
-        <NavLink href="about">About ADHD</NavLink>
-        <NavLink href="mental-health">Brain Dump</NavLink>
-        <NavLink href="legal">Future Tasks</NavLink>
+        <NavLink href="about-adhd">About ADHD</NavLink>
+        <NavLink href="braindump">Brain Dump</NavLink>
+        <NavLink href="future-tasks">Future Tasks</NavLink>
       </Nav>
     </Navbar>
   );

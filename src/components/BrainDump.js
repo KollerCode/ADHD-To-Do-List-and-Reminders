@@ -1,29 +1,34 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import NewDump from "./NewDump";
+import DumpList from "./DumpList"
 
 function BrainDump({  }) {
-  const [description, setDescription] = useState("");
-  // function handleSubmit(e) {
-  //         e.preventDefault();
-  //         };
+  const [dumps, setDumps] = useState([]);
 
-  fetch("http://localhost:4000/dumps", {
-             method: "POST",
-             headers: {
-               "Content-Type": "application/json",
-             },
-    body: JSON.stringify({ description: description }),
-           })
-             .then((r) => r.json())
-            //  .then((data) => onAddDumps(data));
-          // then use onAddTodo to add todo to state
+  useEffect(() => {
+      fetch("http://localhost:4000/dumps")
+        .then((r) => r.json())
+        .then((data) => setDumps(data));
+    }, []);
+
+    function addDump(newDump) {
+      const updatedDumps = [...dumps, newDump];
+      setDumps(updatedDumps);
+    }
+
+    function deleteDump(id) {
+      const updatedDumps = dumps.filter((dump) => dump.id !== id);
+      setDumps(updatedDumps);
+    }
+  
+
   return (
-    <div className="task-lister">
-      {/* <NewDump onAddDump={onAddDump} />
-      <ToDoList
-        todos={todos}
-        onDeleteToDo={deleteToDo}
-      /> */}
+    <div className="braindump">
+      <NewDump onAddDump={addDump} />
+      <DumpList
+        dumps={dumps}
+        onDeleteDump={deleteDump}
+      />
     </div>
   );
 }

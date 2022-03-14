@@ -32,7 +32,7 @@
   "dumps": [
     {
       "id": 3,
-      "content": "BOOTSTRAP"
+      "description": "BOOTSTRAP"
     }
   ]
 }
