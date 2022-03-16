@@ -9,7 +9,6 @@ import {
   Link,
   Routes
 } from "react-router-dom";
-import ToDoListForm from './components/ToDoListForm';
 import BrainDump from './components/BrainDump'
 import DailyQuote from './components/DailyQuote';
 import About from './components/About';
@@ -19,8 +18,6 @@ function App() {
   const [quote, setQuote] = useState({});
   
   useEffect(() => {
-     
-
     fetch("https://type.fit/api/quotes")
       .then((r) => r.json())
       .then((quotes) => {

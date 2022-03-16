@@ -19,8 +19,8 @@ let dateStr = month + "/" + date + "/" + year;
   return (
     <div>
       <Spinner /> 
-      {!randomQuote ? null :<><h2>{dateStr}</h2>
-      <p>{randomQuote.text}-{randomQuote.author}</p></>
+      {!randomQuote ? null :<><h2 className="date">{dateStr}</h2>
+      <p className="quote">{randomQuote.text}-{randomQuote.author}</p></>
       }
     </div>
   );

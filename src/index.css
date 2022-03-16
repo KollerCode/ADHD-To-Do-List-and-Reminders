@@ -63,7 +63,15 @@ a.brand.navbar-brand{
 } 
 
 /* Nav bar 2 with Api and Fidget Clicker */
-
+p.quote{
+  text-align: center;
+  background-color: #FFD6A5;
+  display: flex;
+  justify-content: space-around;
+}
+h2.date{
+  display: flex;
+}
 /* h1{
   text-align: center;
   background-color: #FFD6A5;
