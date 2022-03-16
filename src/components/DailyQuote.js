@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Spinner from "./Spinner";
 
-function DailyQuote() {
-  const [quotes, setQuotes] = useState([]);
-  const [text, setText] = useState("")
-  // const [date, setDate] = useState("")
+function DailyQuote({randomQuote}) {
 
 var d = new Date();
 
@@ -14,23 +11,17 @@ let year = d.getUTCFullYear();
 
 let dateStr = month + "/" + date + "/" + year;
   
-  useEffect(() => {
-    fetch("https://type.fit/api/quotes")
-      .then((r) => r.json())
-      .then((quotes) => setQuotes(quotes))
-  }, []);
 
-  
-    let randomIndex = Math.floor(Math.random() * (quotes.length - 1));
-    let randomQuote = quotes[randomIndex];
     // setText(randomQuote);
   
 // more on line 11 and add more state for randomQuote
 
   return (
     <div>
-      <Spinner />
-      <h2>{dateStr}</h2>
+      <Spinner /> 
+      {!randomQuote ? null :<><h2>{dateStr}</h2>
+      <p>{randomQuote.text}-{randomQuote.author}</p></>
+      }
     </div>
   );
 }

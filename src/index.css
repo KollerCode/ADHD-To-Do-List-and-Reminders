@@ -141,6 +141,12 @@ img.aboutpic{
   border-radius: 50%;
 }
 
+h3{
+  color:#FFBA7B;
+  text-shadow: 1.5px 1.5px #194849de;
+  font-size: 20px;
+}
+
 /* brain dump */
 div.braindump-form {
   display: grid;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 // import "bootstrap"
 import Header from './components/Header'
 import NavBar from './components/NavBar';
@@ -16,6 +16,20 @@ import About from './components/About';
 import Home from './components/Home';
 
 function App() {
+  const [quote, setQuote] = useState({});
+  
+  useEffect(() => {
+     
+
+    fetch("https://type.fit/api/quotes")
+      .then((r) => r.json())
+      .then((quotes) => {
+        let randomIndex = Math.floor(Math.random() * (quotes.length - 1));
+        setQuote(quotes[randomIndex])
+      });
+  }, []);
+
+
   return (
     <>
       <Router>
@@ -23,7 +37,7 @@ function App() {
           <header>
             <NavBar />
             <Header />
-            <DailyQuote />
+            <DailyQuote randomQuote={quote}/>
           </header>
           <Routes>
             <Route path="/" element={<Home />} />

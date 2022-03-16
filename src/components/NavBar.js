@@ -1,6 +1,7 @@
 import react from "react";
-import { Navbar, Nav, NavbarBrand, NavLink } from "react-bootstrap";
+import { Navbar, Nav, NavbarBrand } from "react-bootstrap";
 import happybrain from "../images/happybrain.png"
+import { NavLink } from "react-router-dom";
 
 function NavBar() {
   return (
@@ -10,10 +11,10 @@ function NavBar() {
     I Can ADHD 
       </NavbarBrand>
       <Nav className="mr-auto" style={{ marginLeft: "auto", paddingRight: 40 }}>
-        <NavLink href="/">Home</NavLink>
-        <NavLink href="about-adhd">About ADHD</NavLink>
-        <NavLink href="braindump">Brain Dump</NavLink>
-        <NavLink href="future-tasks">Future Tasks</NavLink>
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="about-adhd">About ADHD</NavLink>
+        <NavLink to="braindump">Brain Dump</NavLink>
+        <NavLink to="future-tasks">Future Tasks</NavLink>
       </Nav>
     </Navbar>
   );

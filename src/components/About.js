@@ -6,7 +6,7 @@ function About() {
     return (
       <div className="about">
         <div className="about-title">
-          <h1>About ADHD</h1>
+          <h3>About ADHD</h3>
           <p>
             ADHD, or Attention-deficit/hyperactivity disorder, is usually
             characterized by the inability to sit still, control impulse, and
@@ -59,7 +59,7 @@ function About() {
         </div>
         <img src={warrior} className="warrior-img" />
         <div className="about-app">
-          <h1>What makes this app different</h1>
+          <h3>What makes this app different</h3>
           <p>
             This app was made by someone, me, who has struggled with ADHD and
             knows what works and what doesn't when it comes to trying to manage
@@ -69,7 +69,7 @@ function About() {
             needs. This app was made with those needs in mind. Even the colors
             were are meant to stimulate the ADHD brain!
           </p>
-          <h3>Let's look at some of the unique features!</h3>
+          <h4>Let's look at some of the unique features!</h4>
           <p>
             The fidget spinner in the 2nd nav bar is for those times when you
             forgot a thought a need a moment to pause and reflect. Or, just to
@@ -88,8 +88,8 @@ function About() {
           </p>
         </div>
         <div className="about-me">
-          <h1>About the creator</h1>
-          <h3>Natasha</h3>
+          <h3>About the creator</h3>
+          <h4>Natasha</h4>
           <img className="aboutpic" src={natasha} alt="natasha"></img>
           <p>
             Natasha is a jack of all trades. Holding a Master's in International
