@@ -20,7 +20,7 @@ let dateStr = month + "/" + date + "/" + year;
     <div>
       <Spinner /> 
       {!randomQuote ? null :<><h2 className="date">{dateStr}</h2>
-      <p className="quote">{randomQuote.text}-{randomQuote.author}</p></>
+      <strong><p className="quote">{randomQuote.text}-{randomQuote.author}</p></strong></>
       }
     </div>
   );

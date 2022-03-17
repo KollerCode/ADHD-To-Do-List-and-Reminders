@@ -67,10 +67,20 @@ p.quote{
   text-align: center;
   background-color: #FFD6A5;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  border-radius: 25%;
+  font-size: 20px;
+  padding: 30px;
+  color: #ffffff;
+  text-shadow: 1.5px 1.5px #643d02;
 }
 h2.date{
   display: flex;
+  float: left;
+  color: #41c9ff;
+  text-shadow: 1.5px 1.5px #0b08e0;
+
+  padding: 20px;
 }
 /* h1{
   text-align: center;
@@ -138,6 +148,7 @@ h1{
 div.about{
   text-align: center;
   background-color: #FFF199;
+  font-size: 20px;
 }
 
 img.warrior-img{
@@ -150,9 +161,16 @@ img.aboutpic{
 }
 
 h3{
-  color:#FFBA7B;
+  color:#ffa641;
   text-shadow: 1.5px 1.5px #194849de;
-  font-size: 20px;
+  font-size: 40px;
+  padding-top: 28px;
+}
+
+h4{
+    color:#ffa641;
+    text-shadow: 1.5px 1.5px #194849de;
+    font-size: 25px;
 }
 
 /* brain dump */

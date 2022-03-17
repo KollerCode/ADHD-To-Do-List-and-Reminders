@@ -22,16 +22,16 @@ function NavBar() {
         </LinkContainer>
       <Nav className="mr-auto" style={{ marginLeft: "auto", paddingRight: 40 }}>
         <LinkContainer to="/">
-          <Nav.Link>Home</Nav.Link>
+          <Nav.Link><strong>Home</strong></Nav.Link>
         </LinkContainer>
         <LinkContainer to="about-adhd">
-          <Nav.Link>About ADHD</Nav.Link>
+          <Nav.Link><strong>About ADHD</strong></Nav.Link>
         </LinkContainer>
         <LinkContainer to="braindump">
-          <Nav.Link>Brain Dump</Nav.Link>
+          <Nav.Link><strong>Brain Dump</strong></Nav.Link>
         </LinkContainer>
         <LinkContainer to="future-tasks">
-          <Nav.Link>Future Tasks</Nav.Link>
+          <Nav.Link><strong>Future Tasks</strong></Nav.Link>
         </LinkContainer>
       </Nav>
     </Navbar>
