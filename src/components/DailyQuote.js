@@ -17,11 +17,21 @@ let dateStr = month + "/" + date + "/" + year;
 // more on line 11 and add more state for randomQuote
 
   return (
-    <div>
-      <Spinner /> 
-      {!randomQuote ? null :<><h2 className="date">{dateStr}</h2>
-      <strong><p className="quote">{randomQuote.text}-{randomQuote.author}</p></strong></>
-      }
+    <div className="wrapper">
+      {!randomQuote ? null : (
+        <>
+          <div className="date">
+            <h2 className="date">Today's Date:</h2>
+            <h2 className="date">{dateStr}</h2>
+          </div>
+          <strong>
+            <p className="quote">
+              {randomQuote.text}-{randomQuote.author}
+            </p>
+          </strong>
+        </>
+      )}
+      <Spinner />
     </div>
   );
 }

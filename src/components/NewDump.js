@@ -40,9 +40,9 @@ function NewDump({ onAddDump }) {
               onChange={(e) => setDescription(e.target.value)}
             />
           </div>
-          <button type="submit" class="btn btn-primary">
+          <Button variant="primary" type="submit">
             Submit
-          </button>
+          </Button>{''}
         </div>
       </form>
     </div>

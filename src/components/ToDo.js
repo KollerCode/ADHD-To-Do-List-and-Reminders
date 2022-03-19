@@ -36,6 +36,9 @@ function ToDo({ todo, onUpdateToDo, onDeleteToDo }) {
       onDeleteToDo(id);
     }
     
+    function sendToFuture() {
+      
+    }
     return (
       <li className="list">
         <label>
@@ -95,7 +98,7 @@ function ToDo({ todo, onUpdateToDo, onDeleteToDo }) {
         </label>
         <label className="tomorrow">
           Tomorrow-ish
-          <button>
+          <button onClick={sendToFuture}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
