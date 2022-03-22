@@ -96,7 +96,13 @@ h2.date{
   grid-row: 1;
   padding: 20px;
   text-decoration-line: underline;
+  font-size: 30px;
 }
+
+/* div.date{
+  background-color: white;
+  border-radius: 45%;
+} */
 /* h1{
   text-align: center;
   background-color: #FFD6A5;

@@ -8,7 +8,6 @@ function ToDo({ todo, onUpdateToDo, onDeleteToDo }) {
   console.log(onUpdateToDo)
     
     const sendToFuture = () => {
-        // persist changes on server
         fetch(`http://localhost:4000/todos/${id}`, {
           method: "PATCH",
           headers: {
@@ -92,7 +91,7 @@ function ToDo({ todo, onUpdateToDo, onDeleteToDo }) {
         </label>
         <label className="tomorrow">
           Tomorrow-ish
-          <button onClick={sendToFuture}>
+          <button onClick={sendToFuture} to='future-tasks'>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"

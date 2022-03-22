@@ -2,7 +2,13 @@ import React from "react";
 import ToDo from "./ToDo";
 
 function ToDoList({ todos, onDeleteToDo, onUpdateToDo }) {
-//  (.filter)
+  const filterToDo = (todo) => {
+    if (todos && todos.filter(todo.future === true)) {
+        return { ...todo, future: true };
+      } else {
+        return todos && todos.map(todo);
+      }
+ }
   
   return (
     <div>

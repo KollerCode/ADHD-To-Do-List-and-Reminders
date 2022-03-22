@@ -1,7 +1,7 @@
 import React from "react";
 
-function FutureTasks() {
-    
+function FutureTasks({onUpdateToDo}) {
+    onUpdateToDo = { onUpdateToDo }; 
 }
 
 export default FutureTasks

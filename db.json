@@ -4,7 +4,7 @@
       "id": 2,
       "description": "Give Johann a haircut",
       "urgent": false,
-      "future": false,
+      "future": true,
       "completed": true
     },
     {
@@ -12,26 +12,28 @@
       "description": "pay the electric bill",
       "urgent": false,
       "future": false,
-      "completed": true
+      "completed": false
     },
     {
       "id": 4,
       "description": "find a daycare",
       "urgent": false,
       "future": false,
-      "completed": true
+      "completed": false
     },
     {
       "description": "Buy a car",
       "urgent": false,
       "future": false,
-      "id": 5
+      "id": 5,
+      "completed": false
     },
     {
       "description": "Call the doctor",
       "urgent": false,
       "future": false,
-      "id": 6
+      "id": 6,
+      "completed": false
     }
   ],
   "dumps": [
