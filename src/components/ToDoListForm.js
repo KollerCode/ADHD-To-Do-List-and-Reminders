@@ -27,10 +27,10 @@ function ToDoListForm() {
      setToDos(updatedTodos);
    }
 
-  function updateToDo(id, completed) {
+  function updateToDo(id) {
      const updatedToDos = todos.map((todo) => {
        if (todo.id === id) {
-         return { ...todo, completed };
+         return { ...todo, future: true  };
        } else {
          return todo;
        }

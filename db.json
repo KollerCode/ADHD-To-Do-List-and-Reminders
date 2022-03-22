@@ -3,36 +3,34 @@
     {
       "id": 2,
       "description": "Give Johann a haircut",
-      "completed": false,
       "urgent": false,
-      "wait": false
+      "future": false,
+      "completed": true
     },
     {
       "id": 3,
       "description": "pay the electric bill",
-      "completed": false,
       "urgent": false,
-      "wait": false
+      "future": false,
+      "completed": true
     },
     {
       "id": 4,
       "description": "find a daycare",
-      "completed": false,
       "urgent": false,
-      "wait": false
+      "future": false,
+      "completed": true
     },
     {
       "description": "Buy a car",
-      "completed": false,
       "urgent": false,
-      "wait": false,
+      "future": false,
       "id": 5
     },
     {
       "description": "Call the doctor",
-      "completed": false,
       "urgent": false,
-      "wait": false,
+      "future": false,
       "id": 6
     }
   ],

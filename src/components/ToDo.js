@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 
 function ToDo({ todo, onUpdateToDo, onDeleteToDo }) {
-  const { id, description, completed, urgent, wait } = todo;
+  const { id, description, urgent, wait } = todo;
   const [isUrgent, setIsUrgent] = useState(false);
 
   console.log(onUpdateToDo)
     
-    function handleCompleted(completed) {
+    const sendToFuture = () => {
         // persist changes on server
         fetch(`http://localhost:4000/todos/${id}`, {
           method: "PATCH",
@@ -15,15 +15,12 @@ function ToDo({ todo, onUpdateToDo, onDeleteToDo }) {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-                  completed: completed,
+                  future: true,
           }),
         })
           .then((r) => r.json())
             .then((data) => onUpdateToDo(
             data.id,
-            data.completed,
-            data.urgent,
-            data.wait
             )
           );
     }
@@ -36,9 +33,6 @@ function ToDo({ todo, onUpdateToDo, onDeleteToDo }) {
       onDeleteToDo(id);
     }
     
-    function sendToFuture() {
-      
-    }
     return (
       <li className="list">
         <label>
@@ -55,8 +49,8 @@ function ToDo({ todo, onUpdateToDo, onDeleteToDo }) {
           </svg>
           <input
             type="checkbox"
-            onChange={(e) => handleCompleted(e.target.checked)}
-            checked={completed}
+            // onChange={(e) => (e.target.checked)}
+            // checked={true}
           />
         </label>
         <strong>{description}</strong>

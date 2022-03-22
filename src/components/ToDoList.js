@@ -2,7 +2,7 @@ import React from "react";
 import ToDo from "./ToDo";
 
 function ToDoList({ todos, onDeleteToDo, onUpdateToDo }) {
- 
+//  (.filter)
   
   return (
     <div>
