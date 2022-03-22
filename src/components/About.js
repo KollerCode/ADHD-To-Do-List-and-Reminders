@@ -73,7 +73,7 @@ function About() {
             Symptoms of the above two types are equally present in the person.
             Because symptoms can change over time, the presentation may change
             over time as well.
-          </ol>
+            </ol>
         </div>
         <img src={warrior} className="warrior-img" />
         <div className="about-app">
@@ -130,12 +130,15 @@ function About() {
                 </li>
               </ul>
             </li>
-          </ul>
           <li>
             In the future it is the hopes that there will be a community space
             for a all to communicate as well as a calendar and more advanced
-            features.
+            features. It also hopes to add a "take a break" feature. People with ADHD
+            tend to <em>hyperfocus</em> and sometimes it's hard to break away.
+            This function will serve as a reminder to the user to take a break and
+            take care of themselves. 
           </li>
+          </ul>
         </div>
         <div className="about-me">
           <h3>About the creator</h3>

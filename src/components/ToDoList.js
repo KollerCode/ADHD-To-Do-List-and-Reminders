@@ -9,7 +9,7 @@ function ToDoList({ todos, onDeleteToDo, onUpdateToDo }) {
 //         return todos && todos.map(todo);
 //       }
 //  }
-  const visibleToDos ()
+  // const visibleToDos ()
   // iterate over visible todos and map them then make the same function in future tasks
   return (
     <div>

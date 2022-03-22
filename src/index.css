@@ -172,6 +172,8 @@ div.about{
   text-align: center;
   background-color: #FFF199;
   font-size: 20px;
+  margin: 40px;
+  border-radius: 10%;
 }
 
 img.warrior-img{
@@ -179,7 +181,7 @@ img.warrior-img{
 }
 
 img.aboutpic{
-  width: 44%;
+  width: 30%;
   border-radius: 50%;
 }
 
@@ -197,13 +199,29 @@ h4{
 }
 
 p{
-  
+  padding-left: 70px;
+    padding-right: 70px;
+}
+
+ul{
+  padding-left: 95px;
+  padding-right: 70px;
+}
+
+li{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+ol{
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 /* brain dump */
 div.braindump-form {
-  display: grid;
-  justify-content: space-around;
+  /* display: grid;
+  justify-content: space-around; */
   text-align: center;
   width: 100%;
    color: #5c4285;
@@ -218,10 +236,9 @@ background-color: #FFD1D1;
 border-radius: 11%;
 border-color: black;
 font-size: 20px;
-width: 75%;
 padding: 20px;
-float: right;
 text-align: center;
+margin: 40px;
 }
 
 ul.list{
