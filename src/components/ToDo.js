@@ -1,28 +1,31 @@
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
+import { useNavigate } from "react-router";
 
 function ToDo({ todo, onUpdateToDo, onDeleteToDo }) {
   const { id, description, urgent, wait } = todo;
   const [isUrgent, setIsUrgent] = useState(false);
+  const navigate = useNavigate();
 
   console.log(onUpdateToDo)
     
-    const sendToFuture = () => {
-        fetch(`http://localhost:4000/todos/${id}`, {
-          method: "PATCH",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-                  future: true,
-          }),
-        })
-          .then((r) => r.json())
-            .then((data) => onUpdateToDo(
-            data.id,
-            )
-          );
+  const sendToFuture = () => {
+    fetch(`http://localhost:4000/todos/${id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        future: true,
+      })
+    })
+      .then((r) => r.json())
+      .then((data) => {
+        onUpdateToDo(data.id)
+        navigate("/future-tasks")
+      })
     }
+  
     function handleDelete() {
       // persist changes on server
       fetch(`http://localhost:4000/todos/${id}`, {
@@ -91,7 +94,7 @@ function ToDo({ todo, onUpdateToDo, onDeleteToDo }) {
         </label>
         <label className="tomorrow">
           Tomorrow-ish
-          <button onClick={sendToFuture} to='future-tasks'>
+          <button onClick={sendToFuture} >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"

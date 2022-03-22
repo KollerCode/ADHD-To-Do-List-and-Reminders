@@ -11,27 +11,27 @@
       "id": 3,
       "description": "pay the electric bill",
       "urgent": false,
-      "future": false,
+      "future": true,
       "completed": false
     },
     {
       "id": 4,
       "description": "find a daycare",
       "urgent": false,
-      "future": false,
+      "future": true,
       "completed": false
     },
     {
       "description": "Buy a car",
       "urgent": false,
-      "future": false,
+      "future": true,
       "id": 5,
       "completed": false
     },
     {
       "description": "Call the doctor",
       "urgent": false,
-      "future": false,
+      "future": true,
       "id": 6,
       "completed": false
     }
