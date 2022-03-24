@@ -28,12 +28,6 @@ function NewToDO({ onAddToDo }) {
     return (
       <div className="form">
         <h1>Task Lister</h1>
-        {/* <NewToDo onAddTodo={addToDo} /> */}
-        {/* <TodoList
-            todos={todos}
-            onDeleteTodo={deleteTodo}
-            onUpdateTodo={updateTodo}
-          /> */}
         <form onSubmit={handleSubmit}>
           <div class="form-group row">
             <label
