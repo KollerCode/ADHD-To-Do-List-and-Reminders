@@ -24,11 +24,11 @@ let dateStr = month + "/" + date + "/" + year;
             <h2 className="date">Today's Date:</h2>
             <h2 className="date">{dateStr}</h2>
           </div>
-          <strong>
+          <div>
             <p className="quote">
               {randomQuote.text}-{randomQuote.author}
             </p>
-          </strong>
+            </div>
         </>
       )}
       <Spinner />

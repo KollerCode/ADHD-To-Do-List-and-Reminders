@@ -5,15 +5,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #AEF8FF;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-body {
-  background-color: #AEF8FF;
+    monospace,'Boogaloo', cursive, 'Caveat', cursive,'Chango', cursive,
+     'Fenix', serif,'Great Vibes', cursive,'Just Another Hand', cursive,
+     'Press Start 2P', cursive; 
 }
 /* Header */
 .header{
@@ -33,7 +32,6 @@ h1.header-title {
   margin-left: 144px;
   position: relative;
   font-size: larger;
-  font-family: 'Ramaraja', serif;
 }
 
 /* Nav Bar 1 */
@@ -41,26 +39,27 @@ h1.header-title {
   font-size: 25px;
   background: linear-gradient(166deg, #FFD6A5, #CAFFBF);
     padding-top: 15px;
-    padding-bottom: 122px;
 }
 
 #brain {
 /* logo is instyle edit */
 }
 /* Nav links */
-a.nav-link{
-  color: #41c9ff;
-  padding: inherit;
-  float: right; 
-  padding-top: 76px;
-  text-decoration-line: none;
+.navbar-light .navbar-nav .nav-link {
+  color:#41c9ff;
+  font-family: 'Press Start 2P', cursive;
 }
+
+.navbar-light .navbar-nav .nav-link.active{
+    color:#41c9ff;
+}
+
 a.brand.navbar-brand{
   color: white;
    float: left; 
    font-size: 75px;
-  text-decoration-line: none
-  ;
+  text-decoration-line: none;
+  font-family:'Chango', cursive;
 }
 .navbar-light .navbar-brand:hover {
   color: #ffa641;
@@ -74,19 +73,21 @@ a.brand.navbar-brand{
   grid-auto-rows: minmax(100px, auto);
   justify-items: center;
   align-items: center;
+  padding-top: 25px;
 }
 
 p.quote{
   text-align: center;
   background-color: #FFD6A5;
   justify-content: center;
-  border-radius: 25%;
-  font-size: 20px;
+  border-radius: 47%;
+  font-size: 32px;
   padding: 30px;
-  color: #ffffff;
-  text-shadow: 1.5px 1.5px #643d02;
+  color: black;
+  text-shadow: 1.5px 0.5px white;
   grid-column: 1 / 3;
   grid-row: 1;
+  font-family:'Great Vibes', cursive
 }
 h2.date{
   /* display: flex; */
@@ -150,6 +151,11 @@ padding: 40px;
 width: 100%;
 }
 
+span{
+  font-family: 'Just Another Hand', cursive;
+  font-size: 30px;
+   color: #065a5cde;
+}
 li.list{
   text-align: left;
   padding: 10px;
@@ -167,6 +173,7 @@ label.tomorrow{
 h1{
   color:#6aeed1;
   text-shadow: 1.5px 1.5px #194849de;
+  font-family: 'Press Start 2P', cursive; ;
 }
 /* About section */
 div.about{
@@ -186,37 +193,43 @@ img.aboutpic{
   border-radius: 50%;
 }
 
-h3{
+h3.about-h3{
   color:#ffa641;
   text-shadow: 1.5px 1.5px #194849de;
   font-size: 40px;
   padding-top: 28px;
+  font-family:'Press Start 2P', cursive; 
 }
 
 h4{
     color:#ffa641;
     text-shadow: 1.5px 1.5px #194849de;
     font-size: 25px;
+    font-family:'Press Start 2P', cursive; 
 }
 
 p{
   padding-left: 70px;
     padding-right: 70px;
+    font-family: 'Fenix', serif;
 }
 
 ul{
   padding-left: 95px;
   padding-right: 70px;
+  font-family: 'Fenix', serif;
 }
 
 li{
   padding-left: 30px;
   padding-right: 30px;
+  font-family: 'Fenix', serif;
 }
 
 ol{
   padding-left: 100px;
   padding-right: 100px;
+  font-family: 'Fenix', serif;
 }
 
 /* brain dump */
@@ -246,8 +259,16 @@ ul.list{
   text-align: center;
   padding: 10px;
   color: #5c4285;
+  font-family: 'Just Another Hand', cursive;
+  font-size: 30px;
 }
+
 h2{
   color: #CDBCE7;
 text-shadow: 1px 0.5px #380f5ede;
+font-family: 'Press Start 2P', cursive;
+}
+
+.col-form-label-lg {
+    font-family: Boogaloo;
 }

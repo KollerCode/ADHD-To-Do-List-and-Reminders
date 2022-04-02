@@ -3,11 +3,9 @@ import { Button } from "react-bootstrap";
 import { useNavigate } from "react-router";
 
 function ToDo({ todo, onUpdateToDo, onDeleteToDo }) {
-  const { id, description, urgent, wait } = todo;
+  const { id, description, urgent, future } = todo;
   const [isUrgent, setIsUrgent] = useState(false);
   const navigate = useNavigate();
-
-  console.log(onUpdateToDo)
     
   const sendToFuture = () => {
     fetch(`http://localhost:4000/todos/${id}`, {
@@ -24,7 +22,9 @@ function ToDo({ todo, onUpdateToDo, onDeleteToDo }) {
         onUpdateToDo(data.id)
         navigate("/future-tasks")
       })
-    }
+  }
+  // maybe have the navigate moved to todo list and do a true false hae send future 
+  // passed as a prop. or render the visible todos here. thats probably better
   
     function handleDelete() {
       // persist changes on server
@@ -55,7 +55,7 @@ function ToDo({ todo, onUpdateToDo, onDeleteToDo }) {
             // checked={true}
           />
         </label>
-        <strong>{description}</strong>
+        <span>{description}</span>
         <label className="urgent">
           Get done ASAP
           {isUrgent ? (

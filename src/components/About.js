@@ -6,7 +6,7 @@ function About() {
     return (
       <div className="about">
         <div className="about-title">
-          <h3>About ADHD</h3>
+          <h3 className="about-h3">About ADHD</h3>
           <p>
             ADHD, or <em>Attention-deficit/hyperactivity disorder</em>, is
             usually characterized by the inability to sit still, control
@@ -77,7 +77,7 @@ function About() {
         </div>
         <img src={warrior} className="warrior-img" />
         <div className="about-app">
-          <h3>What makes this app different</h3>
+          <h3 className="about-h3">What makes this app different</h3>
           <p>
             This app was made by someone, <em>aka me</em>, who has struggled
             with ADHD and knows what works and what doesn't when it comes to

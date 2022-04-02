@@ -4,14 +4,14 @@
       "id": 2,
       "description": "Give Johann a haircut",
       "urgent": false,
-      "future": false,
+      "future": true,
       "completed": true
     },
     {
       "id": 3,
       "description": "pay the electric bill",
       "urgent": false,
-      "future": false,
+      "future": true,
       "completed": false
     },
     {
@@ -41,6 +41,22 @@
       "urgent": false,
       "id": 7,
       "future": false
+    },
+    {
+      "description": "Make an appointment at the Hair Salon",
+      "completed": false,
+      "urgent": false,
+      "wait": false,
+      "id": 8,
+      "future": true
+    },
+    {
+      "description": "feed the cat",
+      "completed": false,
+      "urgent": false,
+      "wait": false,
+      "id": 9,
+      "future": true
     }
   ],
   "dumps": [
