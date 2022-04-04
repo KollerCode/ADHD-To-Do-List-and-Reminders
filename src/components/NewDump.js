@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { form } from "react-bootstrap";
+import { Form } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 
 function NewDump({ onAddDump }) {
@@ -22,18 +22,18 @@ function NewDump({ onAddDump }) {
   return (
     <div className="braindump-form">
       <h2>Brain Dump</h2>
-      <form onSubmit={handleSubmit}>
+      <Form onSubmit={handleSubmit}>
         <div class="row row-cols-lg-auto g-3 align-items-center">
           <label
             for="colFormLabelLg"
-            class="col-sm-2 col-form-label col-form-label-lg"
+            class="col-form-label-lg"
           >
             Think of something and don't want to forget it? Dump it here!
           </label>
           <div class="col-sm-10">
             <input
               type="text"
-              class="form-control form-control-lg"
+              class="form-control-lg"
               id="colFormLabelLg"
               value={description}
               placeholder="Write away!"
@@ -45,7 +45,7 @@ function NewDump({ onAddDump }) {
           </Button>
           {""}
         </div>
-      </form>
+      </Form>
     </div>
   );
 }

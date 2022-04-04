@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# 🧠 I Can ADHD
+> A front-end prototype app that is the beginning of an even larger project aimed at assisting and connecting persons with ADHD.
+---
+[OVERVIEW](https://github.com/KollerCode/I-Can-ADHD#overview) • 
+[FEATURES](https://github.com/KollerCode/I-Can-ADHD#features) • 
+[HOW TO USE](https://github.com/KollerCode/I-Can-ADHD#how-to-use) • 
+[TECH STACK](https://github.com/KollerCode/I-Can-ADHD#tech-stack) • 
+---
+## 📖 OVERVIEW 
+This web app was created using React.js, styled with React-Bootstrap and custom CSS, and incuded an open api with hundreds of quotes. **This app is essentially a "To-Do" list. However, it is so much more than that** It is marketed towards people with ADHD who struggle with organization and want thought recollection. It also has a space where they can learn more about ADHD. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+>This page has no refreshes and no page redirects and uses React-Router version 6. 
 
-## Available Scripts
+## 🌟 FEATURES
+- Fidget Spinner/Clicker for stimulation.
+- Random Quote generator for inspiration.
+- To-Do list with 2 icons that signify two options: **prioritize** or **delay**
+- The STAR icon will toggle either urgent or not
+- The "Tomorrow-ish" CALENDAR icon when clicked will send the "To-Do" to the FUTURE TASKS page. 
+- The Date is also featured at the top
+- The About page has information about ADHD, the APP and it's features (more in depth), and about the creator aka me. 
+- The Brain Dump page is a place where one can type their thoughts and reminders and add them to a list. 
 
-In the project directory, you can run:
+## ❔ HOW TO USE
 
-### `npm start`
+* Click on the fidget spinner and it will rotate
+* Type your task into the form for hte Brain Dump and the Task Lister and click the "add" button and it will appear. 
+* Click the Star to make it important or schedule it for later to send it to FUTURE TASKS
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 👩🏽‍💻 TECH STACK
+- React.js
+- React-Bootstrap
+- Custom CSS 
+- [QuoteAPI](https://type.fit/api/quotes)
+- JSON server

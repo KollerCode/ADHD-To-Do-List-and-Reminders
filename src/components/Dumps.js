@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Button } from "react-bootstrap";
 
 function Dumps({ dump, onUpdateDump, onDeleteDump }) {
   const { id, description } = dump;
@@ -11,13 +12,12 @@ function Dumps({ dump, onUpdateDump, onDeleteDump }) {
   }
 
   return (
-    <ul className="list
-    ">
-      <strong>{description}</strong>
-      <button classname="delete-task" onClick={handleDelete}>
+    <li>
+      <strong className="dumps-description">{description}</strong>
+      <Button classname="delete-task" onClick={handleDelete}>
         Delete Me!
-      </button>
-    </ul>
+      </Button>
+    </li>
   );
 }
 

@@ -32,7 +32,7 @@ function NewToDO({ onAddToDo }) {
           <div class="row row-cols-lg-auto g-3 align-items-center">
             <label
               for="colFormLabelLg"
-              class="col-sm-2 col-form-label col-form-label-lg">
+              class="col-form-label-lg">
               What tasks do you have to accomplish?
             </label>
             <div class="col-sm-10">
@@ -45,9 +45,9 @@ function NewToDO({ onAddToDo }) {
                 onChange={(e) => setDescription(e.target.value)}
               />
             </div>
-            <button type="submit" class="btn btn-primary">
+            <Button type="submit" class="btn btn-primary">
               Add Task
-            </button>
+            </Button>
           </div>
         </form>
       </div>

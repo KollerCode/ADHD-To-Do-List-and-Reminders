@@ -5,8 +5,8 @@ function DumpList({ dumps, onDeleteDump, onUpdateDump }) {
     console.log(dumps)
   return (
     <div>
-      <h2>📝My Random Thoughts and Inspirations🤔</h2>
-      <ol>
+      <h2 className="brain-dump-title">📝My Random Thoughts and Inspirations🤔</h2>
+      <ul>
         {dumps &&
           dumps.map((dump) => (
             <Dumps
@@ -16,7 +16,7 @@ function DumpList({ dumps, onDeleteDump, onUpdateDump }) {
               onUpdateDump={onUpdateDump}
             />
           ))}
-      </ol>
+      </ul>
     </div>
   );
 }
