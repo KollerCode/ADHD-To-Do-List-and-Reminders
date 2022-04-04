@@ -29,7 +29,7 @@ function NewToDO({ onAddToDo }) {
       <div className="form">
         <h1>Task Lister</h1>
         <form onSubmit={handleSubmit}>
-          <div class="form-group row">
+          <div class="row row-cols-lg-auto g-3 align-items-center">
             <label
               for="colFormLabelLg"
               class="col-sm-2 col-form-label col-form-label-lg">

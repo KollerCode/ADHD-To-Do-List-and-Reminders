@@ -252,7 +252,9 @@ ol{
 label {
   padding: 10px;
 }
-
+.row{
+  justify-content: center
+}
 
 /* brain dump */
 div.braindump-form {

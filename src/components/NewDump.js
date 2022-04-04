@@ -23,7 +23,7 @@ function NewDump({ onAddDump }) {
     <div className="braindump-form">
       <h2>Brain Dump</h2>
       <form onSubmit={handleSubmit}>
-        <div class="form-group row">
+        <div class="row row-cols-lg-auto g-3 align-items-center">
           <label
             for="colFormLabelLg"
             class="col-sm-2 col-form-label col-form-label-lg"
@@ -42,7 +42,8 @@ function NewDump({ onAddDump }) {
           </div>
           <Button variant="primary" type="submit">
             Submit
-          </Button>{''}
+          </Button>
+          {""}
         </div>
       </form>
     </div>
