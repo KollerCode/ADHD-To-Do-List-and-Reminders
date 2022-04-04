@@ -1,13 +1,6 @@
 {
   "todos": [
     {
-      "id": 2,
-      "description": "Give Johann a haircut",
-      "urgent": false,
-      "future": true,
-      "completed": true
-    },
-    {
       "id": 3,
       "description": "pay the electric bill",
       "urgent": false,
@@ -48,14 +41,6 @@
       "urgent": false,
       "wait": false,
       "id": 8,
-      "future": true
-    },
-    {
-      "description": "feed the cat",
-      "completed": false,
-      "urgent": false,
-      "wait": false,
-      "id": 9,
       "future": true
     }
   ],

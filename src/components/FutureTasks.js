@@ -9,7 +9,7 @@ function FutureTasks({ todos, onDeleteToDo, onUpdateToDo}) {
   );
   // iterate over visible todos and map them then make the same function in future tasks
   return (
-    <div>
+    <div className="future-tasks">
       <h1>My To-Do's</h1>
       <ol>
         {visibleFutureToDo.map((todo) => (

@@ -131,24 +131,27 @@ img.spinner-image[spin='1']{
 } 
 
 /* main tasklister */
-div.main-form {
+/* div.main-form {
   display: grid;
   justify-content: space-around;
   text-align: center;
   width: 100%;
-}
-input{
-  padding: 6px 5px;
-  font-size: 15px;
+} */
+
+div.form{
+  display: grid;
+  text-align: center;
 }
 
 div.task-lister{
 background-color: #CAFFBF;
 border-radius: 11%;
-border-color: black;
 font-size: 20px;
 padding: 40px;
-width: 100%;
+margin: 30px;
+display: grid;
+justify-items: center;
+justify-content: space-evenly;
 }
 
 span{
@@ -175,6 +178,20 @@ h1{
   text-shadow: 1.5px 1.5px #194849de;
   font-family: 'Press Start 2P', cursive; ;
 }
+
+/* future tasks */
+
+div.future-tasks{
+background-color: #CDBCE7;
+border-radius: 11%;
+font-size: 20px;
+padding: 40px;
+margin: 30px;
+display: grid;
+justify-items: center;
+justify-content: space-evenly;
+}
+
 /* About section */
 div.about{
   text-align: center;
@@ -231,6 +248,11 @@ ol{
   padding-right: 100px;
   font-family: 'Fenix', serif;
 }
+
+label {
+  padding: 10px;
+}
+
 
 /* brain dump */
 div.braindump-form {

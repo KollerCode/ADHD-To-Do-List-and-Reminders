@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ToDo from "./ToDo";
 
 function ToDoList({ todos, onDeleteToDo, onUpdateToDo }) {
-
+// COMPONENT NOT IN USE ATM
   const visibleToDo = todos.filter(
     (todo) => !todo.future
   );
